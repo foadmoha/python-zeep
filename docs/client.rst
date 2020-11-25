@@ -28,7 +28,7 @@ with SqliteCache enabled.
 
 Configuring the client
 ----------------------
-The Client class accepts a settings argument to configuring the client. You can
+The Client class accepts a settings argument for configuring the client. You can
 initialise the object using the following code:
 
 
@@ -56,8 +56,8 @@ The AsyncClient
 
 The `AsyncClient` allows you to execute operations in an asynchronous
 fashion. There is one big caveat however: the wsdl documents are still loaded
-using synchronous methods. The reason for this is that the codebase was
-originally not written for asynchronous usage and support that is quite a lot
+using synchronous methods. The reason for this is that the codebase was not
+originally written for asynchronous usage and supporting that requires a lot
 of work.
 
 To use async operations you need to use the `AsyncClient()` and the
@@ -92,7 +92,7 @@ The ServiceProxy object
 -----------------------
 
 The ServiceProxy object is a simple object which will check if an operation
-exists for attribute or item requested.  If the operation exists then it will
+exists for the attribute or item requested.  If the operation exists then it will
 return an OperationProxy object (callable) which is responsible for calling the
 operation on the binding.
 
